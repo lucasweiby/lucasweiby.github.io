@@ -1,0 +1,66 @@
+@mixin desktop-lg {
+  @media only screen and (min-width: #{$desktop-lg-width}) {
+    @content;
+  }
+}
+@mixin desktop {
+  @media only screen and (min-width: #{$desktop-width}) {
+    @content;
+  }
+}
+@mixin tablet-xm {
+  @media only screen and (min-width: #{992px}) and (max-width: #{$desktop-width}) {
+    @content;
+  }
+}
+@mixin tablet {
+  @media only screen and (min-width: #{$mobile-width}) and (max-width: #{992px}) {
+    @content;
+  }
+}
+@mixin mobile {
+  @media only screen and (max-width: #{$mobile-width}) {
+    @content;
+  }
+}
+@mixin mobile-xs {
+  @media only screen and (max-width: #{$mobile-xs-width}) {
+    @content;
+  }
+}
+
+@mixin scrollBar ($width, $bg-color, $thumb-color) {
+  ::-webkit-scrollbar {
+    width: $width;
+    background: $bg-color;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: $thumb-color;
+  }
+}
+
+@mixin tooltip {
+  .tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+    .tooltiptext {
+      visibility: hidden;
+      width: 120px;
+      background-color: black;
+      color: #fff;
+      text-align: center;
+      padding: 5px 0;
+      border-radius: 6px;
+      
+      /* Position the tooltip text - see examples below! */
+      position: absolute;
+      z-index: 1;
+    }
+    &:hover {
+      .tooltiptext {
+        visibility: visible;
+      }
+    }
+  }
+}
