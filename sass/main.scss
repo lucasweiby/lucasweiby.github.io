@@ -49,28 +49,48 @@ body {
     }
 }
 
+.sidenav-trigger {
+    i {
+        color: white;
+    }
+}
+
 #banner {
-    .banner {
-        background-color: #000;
-        width: 100vw;
-        height: 100vh;
-        .title {
-            padding: 25vh 0;
-            h1, h4 {
-                text-align: center;
-                color: #d10000;
-                margin: 0;
-                font-family: $default-font;
-                text-transform: uppercase;
-            }
-            h1 {
-                font-size: 10vw;
-            }
-            h4 {
-                font-size: 2vw;
-            }
-            @include mobile {
-                padding: 45vh 0;
+    background-color: #000;
+    width: 100vw;
+    height: 100vh;
+    padding: 20vh 0;
+    .title {
+        .banner-img {
+            width: 30vw;
+            height: auto;
+            margin: 2vh 0;
+            -webkit-animation-duration: 1s;
+            -webkit-animation-delay: 1.5s;
+            // -webkit-animation-iteration-count: infinite;
+        }
+        h1, h4, h3 {
+            text-align: center;
+            color: white;
+            margin: 0;
+            font-family: $default-font;
+            text-transform: uppercase;
+        }
+        h1 {
+            font-size: 12vw;
+            padding: 1vh 0;
+        }
+        h4 {
+            font-size: 3vw;
+        }
+        @include mobile {
+            padding: 15vh 0;
+            .banner-img {
+                width: 40vw;
+                height: auto;
+                margin: 1vh 0;
+                -webkit-animation-duration: 1s;
+                -webkit-animation-delay: 1.5s;
             }
         }
     }

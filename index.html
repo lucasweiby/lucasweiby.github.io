@@ -17,25 +17,45 @@
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<link type="text/css" rel="stylesheet" href="assets/materialize/css/materialize.min.css"  media="screen,projection"/>
 	<link type="text/css" rel="stylesheet" href="assets/flexboxgrid/css/flexboxgrid.min.css"  media="screen,projection"/>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 	<link rel="stylesheet" href="css/main.css">
-</head>
 </head>
 <body>
 	<header>
 		<nav id="nav" class="nav-hide middle-xs middle-sm middle-md middle-lg">
 			<div class="nav-wrapper col-md-12">
 				<a href="index.html" class="brand-logo"><img class="responsive-img col-md-3" src="img/logo-nav.png"></a>
-				<ul id="nav-mobile" class="right hide-on-med-and-down">
-					<li><a href="sass.html">Sass</a></li>
-					<li><a href="badges.html">Components</a></li>
-					<li><a href="collapsible.html">JavaScript</a></li>
+				<a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+				<ul class="right hide-on-med-and-down">
+					<li><a href="index.html">Início</a></li>
+					<li><a href="#">Sobre mim</a></li>
+					<li><a href="#">Portfólio</a></li>
+					<li><a href="#">Contato</a></li>
 				</ul>
 			</div>
 		</nav>
+
+		<ul class="sidenav" id="mobile-demo">
+			<li><a href="sass.html">Sass</a></li>
+			<li><a href="badges.html">Components</a></li>
+			<li><a href="collapsible.html">Javascript</a></li>
+			<li><a href="mobile.html">Mobile</a></li>
+		</ul>
 	</header>
 
+	<section id="banner">
+		<div class="middle-xs middle-sm middle-md middle-lg center-md center-sm center-xs center-lg">
+			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 title">
+				<img src="img/logo-nav.png" alt="" id="banner-pic" class="banner-img animated bounceIn">
+				<h4 class="banner-text">Olá, me chamo Weiby e sou...</h4>
+				<h1 class="banner-text">Designer</h1>
+			</div>
+		</div>
+	</section>
+
 	<script src="js/jquery.js"></script>
-    <script src="js/scrollreveal.js"></script>
+	<script src="js/scrollreveal.js"></script>
+	<script src="assets/materialize/js/materialize.min.js"></script>
 	<script src="js/functions.js"></script>
 </body>
 </html>
