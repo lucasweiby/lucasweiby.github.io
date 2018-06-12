@@ -37,6 +37,34 @@
   ::-webkit-scrollbar-thumb {
     background: $thumb-color;
   }
+  ::-moz-scrollbar {
+    width: $width;
+    background: $bg-color;
+  }
+  ::-moz-scrollbar-thumb {
+    background: $thumb-color;
+  }
+  ::-ms-scrollbar {
+    width: $width;
+    background: $bg-color;
+  }
+  ::-ms-scrollbar-thumb {
+    background: $thumb-color;
+  }
+  ::-o-scrollbar {
+    width: $width;
+    background: $bg-color;
+  }
+  ::-o-scrollbar-thumb {
+    background: $thumb-color;
+  }
+  ::scrollbar {
+    width: $width;
+    background: $bg-color;
+  }
+  ::scrollbar-thumb {
+    background: $thumb-color;
+  }
 }
 
 @mixin tooltip {

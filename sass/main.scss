@@ -2,7 +2,7 @@
 @import '_mixins';
 
 body {
-    background-color: #d10000;
+    background-color: #fff;
     margin: 0;
     overflow-x: hidden;
     height: 300vh;
@@ -139,7 +139,7 @@ body {
         .img {
             display: block;
             margin: 0 auto;
-            width: 40vw;
+            width: 35vw;
             height: auto;
         }
         .port-title {
@@ -149,12 +149,17 @@ body {
             color: #d10000;
             margin: 0;
             font-size: 2vw;
+            -webkit-animation-duration: 1s;
+            -webkit-animation-delay: 1.5s;
         }
         .port-text {
             font-family: $sec-font;
             text-align: center;
             color: #000;
             margin: 2% 20%;
+            font-size: 20px;
+            -webkit-animation-duration: 1s;
+            -webkit-animation-delay: 2s;
         }
         .port-btn {
             display: block;
@@ -164,12 +169,24 @@ body {
             text-transform: uppercase;
             font-family: $default-font;
             width: 30%;
-            background-color: #d10000;
+            background-color: #000;
             color: #fff;
             padding: 2% 0;
+            -webkit-transition: background-color .5s ease, color .5s ease;
+            -moz-transition: background-color .5s ease, color .5s ease;
+            -ms-transition: background-color .5s ease, color .5s ease;
+            -o-transition: background-color .5s ease, color .5s ease;
+            transition: background-color .5s ease, color .5s ease;
+            -webkit-animation-duration: 1s;
+            -webkit-animation-delay: 2s;
             &:hover {
-                background-color: #000;
-                color: #d10000;
+                background-color: #d10000;
+                color: #fff;
+                -webkit-transition: background-color .5s ease, color .5s ease;
+                -moz-transition: background-color .5s ease, color .5s ease;
+                -ms-transition: background-color .5s ease, color .5s ease;
+                -o-transition: background-color .5s ease, color .5s ease;
+                transition: background-color .5s ease, color .5s ease;
             }
         }
         @include mobile {

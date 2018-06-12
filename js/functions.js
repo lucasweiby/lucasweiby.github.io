@@ -4,9 +4,11 @@
 
   		if (wscroll > $(window).height()) {
   			$('#nav').removeClass("nav-hide").addClass("nav-show"); 
+        $('#banner-pic').removeClass('bounceIn').addClass('bounceOut');
   		}
   		else {
   			$('#nav').removeClass("nav-show").addClass("nav-hide");
+        $('#banner-pic').removeClass('bounceOut').addClass('bounceIn');
   		}
   	});
   });
@@ -16,6 +18,7 @@
   });
 
 
+  // ScrollReveal
   window.sr = ScrollReveal(); 
 
   sr.reveal('.nav-hide',{
@@ -51,27 +54,6 @@
   	duration: 1000,
   	origin: 'top',
   	reset: 'true'
-  },500);
-
-  sr.reveal('.port-title',{
-  	duration: 1000,
-  	origin: 'bottom',
-  	reset: 'true',
-  	delay: 500
-  },500);
-
-  sr.reveal('.port-text',{
-  	duration: 1000,
-  	origin: 'bottom',
-  	reset: 'true',
-  	delay: 600
-  },500);
-
-  sr.reveal('.port-btn',{
-  	duration: 1000,
-  	origin: 'bottom',
-  	reset: 'true',
-  	delay: 700
   },500);
 
 

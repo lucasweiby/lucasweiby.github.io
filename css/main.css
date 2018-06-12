@@ -1,7 +1,7 @@
 @import url("../fonts/league/stylesheet.css");
 @import url("../fonts/glacial/stylesheet.css");
 body {
-  background-color: #d10000;
+  background-color: #fff;
   margin: 0;
   overflow-x: hidden;
   height: 300vh; }
@@ -11,6 +11,34 @@ body {
   background: #000; }
 
 ::-webkit-scrollbar-thumb {
+  background: #d10000; }
+
+::-moz-scrollbar {
+  width: 8px;
+  background: #000; }
+
+::-moz-scrollbar-thumb {
+  background: #d10000; }
+
+::-ms-scrollbar {
+  width: 8px;
+  background: #000; }
+
+::-ms-scrollbar-thumb {
+  background: #d10000; }
+
+::-o-scrollbar {
+  width: 8px;
+  background: #000; }
+
+::-o-scrollbar-thumb {
+  background: #d10000; }
+
+::scrollbar {
+  width: 8px;
+  background: #000; }
+
+::scrollbar-thumb {
   background: #d10000; }
 
 .nav-hide {
@@ -113,7 +141,7 @@ body {
     #portfolio .portfolio .img {
       display: block;
       margin: 0 auto;
-      width: 40vw;
+      width: 35vw;
       height: auto; }
     #portfolio .portfolio .port-title {
       font-family: "League Spartan";
@@ -121,12 +149,17 @@ body {
       text-align: center;
       color: #d10000;
       margin: 0;
-      font-size: 2vw; }
+      font-size: 2vw;
+      -webkit-animation-duration: 1s;
+      -webkit-animation-delay: 1.5s; }
     #portfolio .portfolio .port-text {
       font-family: "Glacial Indifference";
       text-align: center;
       color: #000;
-      margin: 2% 20%; }
+      margin: 2% 20%;
+      font-size: 20px;
+      -webkit-animation-duration: 1s;
+      -webkit-animation-delay: 2s; }
     #portfolio .portfolio .port-btn {
       display: block;
       margin: 0 auto;
@@ -135,12 +168,24 @@ body {
       text-transform: uppercase;
       font-family: "League Spartan";
       width: 30%;
-      background-color: #d10000;
+      background-color: #000;
       color: #fff;
-      padding: 2% 0; }
+      padding: 2% 0;
+      -webkit-transition: background-color .5s ease, color .5s ease;
+      -moz-transition: background-color .5s ease, color .5s ease;
+      -ms-transition: background-color .5s ease, color .5s ease;
+      -o-transition: background-color .5s ease, color .5s ease;
+      transition: background-color .5s ease, color .5s ease;
+      -webkit-animation-duration: 1s;
+      -webkit-animation-delay: 2s; }
       #portfolio .portfolio .port-btn:hover {
-        background-color: #000;
-        color: #d10000; }
+        background-color: #d10000;
+        color: #fff;
+        -webkit-transition: background-color .5s ease, color .5s ease;
+        -moz-transition: background-color .5s ease, color .5s ease;
+        -ms-transition: background-color .5s ease, color .5s ease;
+        -o-transition: background-color .5s ease, color .5s ease;
+        transition: background-color .5s ease, color .5s ease; }
     @media only screen and (max-width: 600px) {
       #portfolio .portfolio {
         column-count: 1; }
