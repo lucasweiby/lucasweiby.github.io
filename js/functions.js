@@ -17,6 +17,9 @@
   	$('.sidenav').sidenav();
   });
 
+  $(document).ready(function(){
+    $('.materialboxed').materialbox();
+  });
 
   // ScrollReveal
   window.sr = ScrollReveal(); 

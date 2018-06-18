@@ -151,6 +151,8 @@ body {
             font-size: 2vw;
             -webkit-animation-duration: 1s;
             -webkit-animation-delay: 1.5s;
+            -moz-animation-duration: 1s;
+            -moz-animation-delay: 1.5s;
         }
         .port-text {
             font-family: $sec-font;
@@ -160,6 +162,8 @@ body {
             font-size: 20px;
             -webkit-animation-duration: 1s;
             -webkit-animation-delay: 2s;
+            -moz-animation-duration: 1s;
+            -moz-animation-delay: 2s;
         }
         .port-btn {
             display: block;
@@ -179,6 +183,8 @@ body {
             transition: background-color .5s ease, color .5s ease;
             -webkit-animation-duration: 1s;
             -webkit-animation-delay: 2s;
+            -moz-animation-duration: 1s;
+            -moz-animation-delay: 2s;
             &:hover {
                 background-color: #d10000;
                 color: #fff;
@@ -204,6 +210,63 @@ body {
             .port-btn {
                 width: 80%;
             }
+        }
+    }
+}
+
+
+.gallery {
+    background-color: #000;
+    padding: 5vh 5vw;
+    
+    .gallery-title, .desc {
+        color: #fff;
+        text-align: center;
+    }
+
+    .gallery-title {
+        font-family: $default-font;
+    }
+
+    .desc {
+        font-family: $sec-font;
+        margin: -1vh 0 2vh;
+    }
+    .column {
+        float: left;
+        width: 25%;
+        padding: 10px;
+        img {
+          margin-top: 12px;
+          width: 100%;
+        }
+    }
+
+    /* Clear floats after the columns */
+
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    /* Responsive layout - makes a two column-layout instead of four columns */
+    @include desktop {
+        .column {
+            width: 25%;
+        }
+    }
+
+    /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+    @include mobile {
+        .column {
+            width: 50%;
+        }
+    }
+
+    @include mobile-xs {
+        .column {
+            width: 50%;
         }
     }
 }
