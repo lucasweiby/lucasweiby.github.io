@@ -8,7 +8,7 @@ body {
     height: 300vh;
 }
 
-@include scrollBar (8px, #000, #d10000);
+@include scrollBar (8px, #000, #fff);
 
 // .container {
 //     width: 100%;
@@ -218,7 +218,12 @@ body {
 .gallery {
     background-color: #000;
     padding: 5vh 5vw;
-    
+
+    .materialbox-caption {
+      overflow-x: hidden;
+      background-color: #000;
+    }
+
     .gallery-title, .desc {
         color: #fff;
         text-align: center;
