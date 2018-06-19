@@ -14,6 +14,19 @@ $(function(){
   });
 });
 
+$(function(){
+  $(window).scroll(function(){
+    var wscroll = $(window).scrollTop();
+
+    if (wscroll > $(window).height()) {
+      $('#banner-pic').removeClass('bounceIn').addClass('bounceOut');
+    }
+    else {
+      $('#banner-pic').removeClass('bounceOut').addClass('bounceIn');
+    }
+  });
+});
+
 
 $(document).ready(function(){
   // Add smooth scrolling to all links
