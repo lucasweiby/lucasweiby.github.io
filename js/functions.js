@@ -1,9 +1,11 @@
 //Função própria
+
+//Aparecer a nav ao dar um scroll
 $(function(){
   $(window).scroll(function(){
     var wscroll = $(window).scrollTop();
 
-    if (wscroll > $(window).height()) {
+    if (wscroll >= $(window).height()) {
       $('#nav').removeClass("nav-hide").addClass("nav-show");
       $('#banner-pic').removeClass('bounceIn').addClass('bounceOut');
     }
@@ -14,20 +16,15 @@ $(function(){
   });
 });
 
-$(function(){
-  $(window).scroll(function(){
-    var wscroll = $(window).scrollTop();
-
-    if (wscroll > $(window).height()) {
-      $('#banner-pic').removeClass('bounceIn').addClass('bounceOut');
-    }
-    else {
-      $('#banner-pic').removeClass('bounceOut').addClass('bounceIn');
-    }
+//Indicação do Menu
+$(document).ready(function() {
+  $("ul li a").click(function(){
+    $("li a").removeClass("active");
+    $(this).addClass("active");
   });
 });
 
-
+//Scroll suave
 $(document).ready(function(){
   // Add smooth scrolling to all links
   $("a").on('click', function(event) {
@@ -53,49 +50,11 @@ $(document).ready(function(){
   });
 });
 
-//Materialize
-$(document).ready(function(){
-  $('.sidenav').sidenav();
+//Confirmação de Envio
+$(document).ready(function() {
+  $(".contato-submit").click(function(){
+    alert("Seu e-mail foi enviado, aguarde retorno!");
+  });
 });
 
-$(document).ready(function(){
-  $('.materialboxed').materialbox();
-});
-
-// ScrollReveal
-window.sr = ScrollReveal();
-
-sr.reveal('.nav-hide',{
-  duration: 1000,
-  origin: 'top',
-  reset: true,
-  scale: 1
-});
-
-sr.reveal('.nav-show',{
-  reset: true
-});
-
-sr.reveal('.banner-text',{
-  reset: true,
-  duration: 1000
-},500);
-
-sr.reveal('.frase-text',{
-  duration: 1000,
-  origin: 'top',
-  reset: true
-});
-
-sr.reveal('.autor',{
-  duration: 1000,
-  origin: 'bottom',
-  reset: true,
-  delay: 500
-});
-
-sr.reveal('.img',{
-  duration: 1000,
-  origin: 'top',
-  reset: 'true'
-},500);
+//Fim das funções próprias

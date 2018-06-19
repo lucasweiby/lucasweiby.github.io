@@ -29,18 +29,16 @@
 				<a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
 				<ul class="right hide-on-med-and-down">
 					<li><a href="index.html">Início</a></li>
-					<li><a href="#">Sobre mim</a></li>
-					<li><a href="#">Portfólio</a></li>
-					<li><a href="#">Contato</a></li>
+					<li><a href="#portfolio">Portfólio</a></li>
+					<li><a href="#contato">Contato</a></li>
 				</ul>
 			</div>
 		</nav>
 
 		<ul class="sidenav" id="mobile-demo">
-			<li><a href="sass.html">Sass</a></li>
-			<li><a href="badges.html">Components</a></li>
-			<li><a href="collapsible.html">Javascript</a></li>
-			<li><a href="mobile.html">Mobile</a></li>
+			<li><a href="index.html">Início</a></li>
+			<li><a href="#portfolio">Portfólio</a></li>
+			<li><a href="#contato">Contato</a></li>
 		</ul>
 	</header>
 
@@ -56,13 +54,13 @@
 
 	<section id="portfolio">
 		<div class="row portfolio">
-			<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+			<div class="projeto col-lg-6 col-md-6 col-sm-12 col-xs-12">
 				<a href="http://www.hanadulhallyu.com.br" target="_blank"><img src="img/hana.png" class="responsive-img img"></a>
 				<h3 class="port-title animated bounceIn">Simples e vibrante!</h3>
 				<p class="port-text animated bounceIn">Nesse projeto empreguei diversas técnicas modernas do web design, como single page, parallax e responsive web design!</p>
 				<a href="http://www.hanadulhallyu.com.br" target="_blank" class="port-btn animated fadeInUp">Veja esse projeto</a>
 			</div>
-			<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+			<div class="projeto col-lg-6 col-md-6 col-sm-12 col-xs-12">
 				<a href="http://www.petcomp.ufc.br" target="_blank"><img src="img/pet.png" class="responsive-img img"></a>
 				<h3 class="port-title animated bounceIn">Design moderno e sofisticado!</h3>
 				<p class="port-text animated bounceIn">Nesse projeto empreguei diversas técnicas modernas do web design, como single page, parallax e responsive web design!</p>
@@ -72,42 +70,73 @@
 	</section>
 
 	<section id="#gallery" class="gallery">
-			<div class="row">
-				<h3 class="gallery-title heading-index col-xs-12 col-sm-12 col-md-12 col-lg-12">MEU LADO ARTÍSTICO</h3>
-				<h6 class="desc col-xs-12 col-sm-12 col-md-12 col-lg-12">Mais que um hobby, uma paixão!</h6>
-				<div class="line"></div>
-				<div class="gallery-pics">
-					<div class="column">
-						<img class="gallery-img materialboxed" data-caption="Seja seu próprio farol! - Lettering" src="img/1.jpg" style="width:100%">
-						<img class="gallery-img materialboxed" data-caption="Cerimônia de encerramento da OCI 2016 na UECE" src="img/2.jpg" style="width:100%">
-						<!-- <img class="gallery-img materialboxed" data-caption="Entrega de certificados da Hora do Código 2017 da E.M.E.I.F. Alaide Augusto de Oliveira" src="img/3.jpg" style="width:100%">
-						<img class="gallery-img materialboxed" data-caption="Exposição do jogo Le Petit Shooter na SAC 2017" src="img/4.JPG" style="width:100%"> -->
-					</div>
-					<div class="column">
-						<img class="gallery-img materialboxed" data-caption="Hora do Código nas Escolas 2016, E.M.E.I.F. Alaide Augusto de Oliveira" src="img/5.jpg" style="width:100%">
-						<img class="gallery-img materialboxed" data-caption="Apresentação do Include nos Encontros Universitários 2017" src="img/6.jpg" style="width:100%">
-						<!-- <img class="gallery-img materialboxed" data-caption="PETiano Minho no workshop de Deep Learning na SAC 2017" src="img/7.JPG" style="width:100%">
-						<img class="gallery-img materialboxed" data-caption="SAC 2017" src="img/8.JPG" style="width:100%"> -->
-					</div>
-					<div class="column">
-						<img class="gallery-img materialboxed" data-caption="Entrega de certificados da Hora do Código 2017 da E.M.E.I.F. Alaide Augusto de Oliveira" src="img/3.jpg" style="width:100%">
-						<img class="gallery-img materialboxed" data-caption="Exposição do jogo Le Petit Shooter na SAC 2017" src="img/4.jpg" style="width:100%">
-						<!-- <img class="gallery-img materialboxed" data-caption="PETianos ingressantes no semestre 2017.2" src="img/gallery/gallery (10).JPG" style="width:100%"> -->
-					</div>
-					<div class="column">
-						<img class="gallery-img materialboxed" data-caption="PETiano Minho no workshop de Deep Learning na SAC 2017" src="img/7.jpg" style="width:100%">
-						<img class="gallery-img materialboxed" data-caption="SAC 2017" src="img/8.jpg" style="width:100%">
-						<!-- <img class="gallery-img materialboxed" data-caption="Turma do Coding 2016" src="img/gallery/gallery (4).jpg" style="width:100%"> -->
-					</div>
+		<div class="row">
+			<h3 id="gallery-title" class="gallery-title heading-index col-xs-12 col-sm-12 col-md-12 col-lg-12 animated bounceIn">MEU LADO ARTÍSTICO</h3>
+			<h6 class="desc col-xs-12 col-sm-12 col-md-12 col-lg-12 animated fadeInUp">Mais que um hobby, uma paixão!</h6>
+			<div class="line"></div>
+			<div class="gallery-pics">
+				<div class="column">
+					<img class="gallery-img materialboxed" data-caption="Seja seu próprio farol! - Lettering" src="img/1.jpg" style="width:100%">
+					<img class="gallery-img materialboxed" data-caption="Cerimônia de encerramento da OCI 2016 na UECE" src="img/2.jpg" style="width:100%">
+					<!-- <img class="gallery-img materialboxed" data-caption="Entrega de certificados da Hora do Código 2017 da E.M.E.I.F. Alaide Augusto de Oliveira" src="img/3.jpg" style="width:100%">
+					<img class="gallery-img materialboxed" data-caption="Exposição do jogo Le Petit Shooter na SAC 2017" src="img/4.JPG" style="width:100%"> -->
+				</div>
+				<div class="column">
+					<img class="gallery-img materialboxed" data-caption="Hora do Código nas Escolas 2016, E.M.E.I.F. Alaide Augusto de Oliveira" src="img/5.jpg" style="width:100%">
+					<img class="gallery-img materialboxed" data-caption="Apresentação do Include nos Encontros Universitários 2017" src="img/6.jpg" style="width:100%">
+					<!-- <img class="gallery-img materialboxed" data-caption="PETiano Minho no workshop de Deep Learning na SAC 2017" src="img/7.JPG" style="width:100%">
+					<img class="gallery-img materialboxed" data-caption="SAC 2017" src="img/8.JPG" style="width:100%"> -->
+				</div>
+				<div class="column">
+					<img class="gallery-img materialboxed" data-caption="Entrega de certificados da Hora do Código 2017 da E.M.E.I.F. Alaide Augusto de Oliveira" src="img/3.jpg" style="width:100%">
+					<img class="gallery-img materialboxed" data-caption="Exposição do jogo Le Petit Shooter na SAC 2017" src="img/4.jpg" style="width:100%">
+					<!-- <img class="gallery-img materialboxed" data-caption="PETianos ingressantes no semestre 2017.2" src="img/gallery/gallery (10).JPG" style="width:100%"> -->
+				</div>
+				<div class="column">
+					<img class="gallery-img materialboxed" data-caption="PETiano Minho no workshop de Deep Learning na SAC 2017" src="img/7.jpg" style="width:100%">
+					<img class="gallery-img materialboxed" data-caption="SAC 2017" src="img/8.jpg" style="width:100%">
+					<!-- <img class="gallery-img materialboxed" data-caption="Turma do Coding 2016" src="img/gallery/gallery (4).jpg" style="width:100%"> -->
 				</div>
 			</div>
 		</div>
-	</section>
+	</div>
+</section>
 
-	<script src="js/jquery.js"></script>
-	<script src="js/scrollreveal.js"></script>
-	<script src="assets/materialize/js/materialize.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.js"></script>
-	<script src="js/functions.js"></script>
+<section id="contato">
+	<div class="arrow col-xs-12 col-sm-12 col-md-12 col-lg-12">
+		<a href="#banner" class="arrow-up"><i class="fas fa-caret-up"></i></a>
+	</div>
+	<div class="desc col-xs-12 col-sm-12 col-md-12 col-lg-12">
+		<h2 class="contato-desc contato-text">Gostou do trabalho?</h2>
+		<h4 class="contato-sub contato-text">Escreva seu e-mail abaixo e receba novidades dos meus trabalhos!</h4>
+		<form class="contato-form">
+			<input type="email" class="contato-email" placeholder="Insira seu e-mail">
+			<input type="submit" class="contato-submit" value="Enviar">
+			<!-- <a href="#"><i class="far fa-envelope"></i></a> -->
+		</form>
+	</div>
+	<div class="social col-xs-12 col-sm-12 col-md-12 col-lg-12">
+		<h3 class="social-title social-text">Siga-me nas redes sociais</h3>
+		<h6 class="social-sub social-text">Acompanhe as novidades e veja outros trabalhos recentes</h6>
+		<a href="https://www.facebook.com/lucas.weiby" class="social-text"><span class="socicon-facebook"></span></a>
+		<a href="https://www.instagram.com/lucasweiby/?hl=pt-br" class="social-text"><span class="socicon-instagram"></span></a>
+		<a href="https://www.linkedin.com/in/lucas-weiby-384a09106/" class="social-text"><span class="socicon-linkedin"></span></a>
+		<a href="https://github.com/lucasweiby" class="social-text"><span class="socicon-github"></span></a>
+	</div>
+</div>
+</section>
+
+<footer class="footer">
+	<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+		<p>&copy; COPYRIGHT 2018</p>
+	</div>
+</footer>
+
+<script src="js/jquery.js"></script>
+<script src="js/scrollreveal.js"></script>
+<script src="assets/materialize/js/materialize.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.js"></script>
+<script src="js/functions-frameworks.js"></script>
+<script src="js/functions.js"></script>
 </body>
 </html>

@@ -6,6 +6,10 @@ body {
   overflow-x: hidden;
   height: 300vh; }
 
+.active {
+  background-color: #fff;
+  color: #000; }
+
 ::-webkit-scrollbar {
   width: 8px;
   background: #000; }
@@ -66,6 +70,10 @@ body {
     top: 1vh;
     width: 120px;
     height: auto; }
+  .nav-show li:hover {
+    background-color: #fff; }
+  .nav-show li a:hover {
+    color: #000; }
   @media only screen and (max-width: 600px) {
     .nav-show {
       padding: 0; } }
@@ -104,32 +112,6 @@ body {
         margin: 1vh 0;
         -webkit-animation-duration: 1s;
         -webkit-animation-delay: 1.5s; } }
-
-#frase {
-  height: 100vh; }
-  #frase .frase .frase-box {
-    padding-top: 40vh; }
-    #frase .frase .frase-box .frase-text {
-      font-family: "League Spartan";
-      text-transform: uppercase;
-      text-align: center;
-      font-size: 4vw;
-      color: #fff; }
-      @media only screen and (max-width: 600px) {
-        #frase .frase .frase-box .frase-text {
-          font-size: 20px; } }
-    #frase .frase .frase-box .autor {
-      font-family: "Glacial Indifference";
-      text-transform: uppercase;
-      text-align: center;
-      margin-right: 6vw;
-      margin-top: -5vh;
-      font-size: 20px; }
-      @media only screen and (max-width: 600px) {
-        #frase .frase .frase-box .autor {
-          margin-top: -2vh;
-          font-size: 15px;
-          margin: 0 auto; } }
 
 #portfolio {
   height: auto;
@@ -199,11 +181,15 @@ body {
           width: 80vw;
           padding: 1vh 0; }
         #portfolio .portfolio .port-title {
-          font-size: 5vw; }
+          font-size: 20px;
+          margin: 0 10%; }
         #portfolio .portfolio .port-text {
-          margin: 2% 10%; }
+          margin: 2% 10%;
+          font-size: 14px !important; }
         #portfolio .portfolio .port-btn {
-          width: 80%; } }
+          width: 70%; }
+        #portfolio .portfolio .projeto {
+          margin: 2vh 0; } }
 
 .materialbox-caption {
   overflow-x: hidden;
@@ -223,12 +209,16 @@ body {
   .gallery .gallery-title {
     font-family: "League Spartan";
     -webkit-animation-duration: 1s;
+    -webkit-animation-delay: 1s;
+    -moz-animation-duration: 1s;
+    -moz-animation-delay: 1s; }
+  .gallery .desc {
+    font-family: "Glacial Indifference";
+    margin: -1vh 0 2vh;
+    -webkit-animation-duration: 1s;
     -webkit-animation-delay: 2s;
     -moz-animation-duration: 1s;
     -moz-animation-delay: 2s; }
-  .gallery .desc {
-    font-family: "Glacial Indifference";
-    margin: -1vh 0 2vh; }
   .gallery .column {
     float: left;
     width: 25%;
@@ -252,27 +242,31 @@ body {
 
 #contato {
   height: auto;
-  background-color: #b70000;
+  background-color: #fff;
   padding: 25vh 0; }
+  @media only screen and (max-width: 600px) {
+    #contato {
+      padding: 10vh 5vw; } }
   #contato .arrow {
     padding: 5vh 0;
     width: 100vw;
     text-align: center; }
     #contato .arrow .arrow-up {
       margin: 0 auto;
-      color: #fff;
-      border: 1px solid #fff;
+      color: #000;
+      border: 1px solid #000;
       padding: 10px;
       border-radius: 6px;
       transition: 0.3s background-color; }
       #contato .arrow .arrow-up:hover {
-        background-color: #fff;
-        color: #000; }
+        background-color: #000;
+        color: #fff; }
   #contato .desc {
     font-family: "League Spartan";
     text-align: center;
-    color: #fff;
-    text-transform: uppercase; }
+    color: #000;
+    text-transform: uppercase;
+    margin: 0 2vw; }
     #contato .desc .contato-desc {
       margin: 0;
       font-size: 50px; }
@@ -282,17 +276,18 @@ body {
     #contato .desc .contato-sub {
       font-family: "Glacial Indifference";
       font-weight: lighter;
-      margin: 1vh 0; }
+      margin: 1vh 0;
+      font-size: 20px;
+      margin-bottom: 10vh; }
       @media only screen and (max-width: 600px) {
         #contato .desc .contato-sub {
-          font-size: 15px; } }
+          font-size: 14px;
+          margin-bottom: 5vh; } }
     #contato .desc .contato-form {
       margin: 0 auto;
       width: 50%; }
       #contato .desc .contato-form .contato-email {
         width: 65%;
-        padding: 1vh;
-        border: none;
         font-family: "Glacial Indifference";
         text-transform: uppercase; }
         #contato .desc .contato-form .contato-email::placeholder {
@@ -301,6 +296,8 @@ body {
           @media only screen and (max-width: 600px) {
             #contato .desc .contato-form .contato-email::placeholder {
               text-align: center; } }
+        #contato .desc .contato-form .contato-email:focus, #contato .desc .contato-form .contato-email:active {
+          border-color: #000; }
       #contato .desc .contato-form .contato-submit {
         width: 30%;
         float: right;
@@ -311,7 +308,7 @@ body {
         transition: 0.3s background-color; }
         #contato .desc .contato-form .contato-submit:hover {
           background-color: #000;
-          color: #d10000; }
+          color: #fff; }
       @media only screen and (max-width: 600px) {
         #contato .desc .contato-form {
           width: 100%;
@@ -326,19 +323,27 @@ body {
     display: block;
     margin: 0 auto;
     text-align: center;
-    color: #fff;
+    color: #000;
     text-transform: uppercase; }
+    @media only screen and (max-width: 600px) {
+      #contato .social .social-title {
+        font-size: 25px; } }
+    #contato .social .social-sub {
+      font-family: "Glacial Indifference";
+      font-size: 14px;
+      margin-top: -2vh;
+      margin-bottom: 5vh; }
     #contato .social a {
       text-decoration: none;
-      color: #fff;
+      color: #000;
       margin: 0 1vw;
-      border: 1px solid #fff;
+      border: 1px solid #000;
       padding: 10px;
       border-radius: 6px;
       transition: 0.3s background-color; }
       #contato .social a:hover {
-        background-color: #fff;
-        color: #000; }
+        background-color: #000;
+        color: #fff; }
 
 .footer {
   left: 0;
@@ -346,12 +351,10 @@ body {
   height: auto;
   width: 100%;
   background-color: #000;
-  color: #d10000;
+  color: #fff;
   font-family: "Glacial Indifference";
   padding: 1px 0; }
-  .footer .container {
-    margin: 0 30px; }
-    .footer .container p {
-      text-align: center; }
+  .footer p {
+    text-align: center; }
 
 /*# sourceMappingURL=main.css.map */
