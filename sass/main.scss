@@ -1,5 +1,6 @@
 @import '_variables';
 @import '_mixins';
+@import '_skills';
 
 body {
   background-color: #fff;
@@ -411,5 +412,48 @@ body {
   padding: 1px 0;
   p {
     text-align: center;
+  }
+}
+
+#bio {
+  height: auto;
+  width: 100vw;
+  .perfil {
+    width: 50vw;
+    height: auto;
+    display: block;
+    padding: 10vh;
+    @include mobile {
+      margin: 0 auto;
+      // position: relative;
+      // left: -12%;
+      width: 50vw;
+      height: auto;
+      padding: 3vh 0;
+    }
+  }
+  .bio {
+    font-family: $default-font;
+    text-align: center;
+    padding: 0 5vw;
+    h1 {
+      @include mobile {
+        font-size: 40px;
+      }
+    }
+    .text {
+      font-family: $sec-font;
+    }
+  }
+}
+
+#habilidades {
+  background-color: #000;
+  padding: 5vh 7vw;
+  h1 {
+    text-align: center;
+    color: #fff;
+    font-family: $default-font;
+    padding: 2vh 0;
   }
 }
