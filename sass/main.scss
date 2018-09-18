@@ -455,5 +455,8 @@ body {
     color: #fff;
     font-family: $default-font;
     padding: 2vh 0;
+    @include mobile {
+      font-size: 40px;
+    }
   }
 }

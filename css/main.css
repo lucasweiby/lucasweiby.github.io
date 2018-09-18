@@ -462,5 +462,8 @@ body {
     color: #fff;
     font-family: "League Spartan";
     padding: 2vh 0; }
+    @media only screen and (max-width: 600px) {
+      #habilidades h1 {
+        font-size: 40px; } }
 
 /*# sourceMappingURL=main.css.map */
