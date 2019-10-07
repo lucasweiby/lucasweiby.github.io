@@ -2,7 +2,8 @@
 @import url("../fonts/glacial/stylesheet.css");
 p {
   color: #525252;
-  font-size: 12px; }
+  font-size: 12px;
+}
 
 .skillbar {
   position: relative;
@@ -23,7 +24,8 @@ p {
   -moz-transition-property: width, background-color;
   -ms-transition-property: width, background-color;
   -o-transition-property: width, background-color;
-  transition-property: width, background-color; }
+  transition-property: width, background-color;
+}
 
 .skillbar-title {
   position: absolute;
@@ -40,7 +42,8 @@ p {
   -moz-border-radius-bottomleft: 3px;
   border-top-left-radius: 3px;
   border-bottom-left-radius: 3px;
-  font-family: "Glacial Indifference"; }
+  font-family: "Glacial Indifference";
+}
 
 .skillbar-title span {
   display: block;
@@ -53,7 +56,8 @@ p {
   -moz-border-radius-topleft: 3px;
   -moz-border-radius-bottomleft: 3px;
   border-top-left-radius: 3px;
-  border-bottom-left-radius: 3px; }
+  border-bottom-left-radius: 3px;
+}
 
 .skillbar-bar {
   height: 20px;
@@ -61,7 +65,8 @@ p {
   background: #6adcfa;
   border-radius: 3px;
   -moz-border-radius: 3px;
-  -webkit-border-radius: 3px; }
+  -webkit-border-radius: 3px;
+}
 
 .skill-bar-percent {
   position: absolute;
@@ -71,59 +76,73 @@ p {
   height: 20px;
   line-height: 20px;
   color: #ffffff;
-  color: rgba(0, 0, 0, 0.4); }
+  color: rgba(0, 0, 0, 0.4);
+}
 
 body {
   background-color: #fff;
   margin: 0;
   overflow-x: hidden;
-  height: 300vh; }
+  height: 300vh;
+}
 
 .active {
   background-color: #fff;
-  color: #000; }
+  color: #000;
+}
 
 ::-webkit-scrollbar {
   width: 8px;
-  background: #000; }
+  background: #000;
+}
 
 ::-webkit-scrollbar-thumb {
-  background: #fff; }
+  background: #fff;
+}
 
 ::-moz-scrollbar {
   width: 8px;
-  background: #000; }
+  background: #000;
+}
 
 ::-moz-scrollbar-thumb {
-  background: #fff; }
+  background: #fff;
+}
 
 ::-ms-scrollbar {
   width: 8px;
-  background: #000; }
+  background: #000;
+}
 
 ::-ms-scrollbar-thumb {
-  background: #fff; }
+  background: #fff;
+}
 
 ::-o-scrollbar {
   width: 8px;
-  background: #000; }
+  background: #000;
+}
 
 ::-o-scrollbar-thumb {
-  background: #fff; }
+  background: #fff;
+}
 
 ::scrollbar {
   width: 8px;
-  background: #000; }
+  background: #000;
+}
 
 ::scrollbar-thumb {
-  background: #fff; }
+  background: #fff;
+}
 
 .nav-hide {
   display: none;
   opacity: 1;
-  transition: opacity .6s ease-in-out;
-  -moz-transition: opacity .6s ease-in-out;
-  -webkit-transition: opacity .6s ease-in-out; }
+  transition: opacity 0.6s ease-in-out;
+  -moz-transition: opacity 0.6s ease-in-out;
+  -webkit-transition: opacity 0.6s ease-in-out;
+}
 
 .nav-show {
   display: block;
@@ -132,291 +151,365 @@ body {
   height: auto;
   width: 100%;
   padding: 0 10px;
-  transition: opacity .6s ease-in-out;
-  -moz-transition: opacity .6s ease-in-out;
-  -webkit-transition: opacity .6s ease-in-out;
+  transition: opacity 0.6s ease-in-out;
+  -moz-transition: opacity 0.6s ease-in-out;
+  -webkit-transition: opacity 0.6s ease-in-out;
   z-index: 1;
   font-family: "League Spartan";
-  text-transform: uppercase; }
-  .nav-show .brand-logo img {
-    position: relative;
-    top: 1vh;
-    width: 120px;
-    height: auto; }
-  .nav-show li:hover {
-    background-color: #fff; }
-  .nav-show li a:hover {
-    color: #000; }
-  @media only screen and (max-width: 600px) {
-    .nav-show {
-      padding: 0; } }
+  text-transform: uppercase;
+}
+.nav-show .brand-logo img {
+  position: relative;
+  top: 1vh;
+  width: 120px;
+  height: auto;
+}
+.nav-show li:hover {
+  background-color: #fff;
+}
+.nav-show li a:hover {
+  color: #000;
+}
+@media only screen and (max-width: 600px) {
+  .nav-show {
+    padding: 0;
+  }
+}
 
 .sidenav-trigger i {
-  color: white; }
+  color: white;
+}
 
 #banner {
   background-color: #000;
   width: 100vw;
   height: 100vh;
-  padding: 20vh 0; }
+  padding: 20vh 0;
+}
+#banner .title .banner-img {
+  width: 30vw;
+  height: auto;
+  margin: 2vh 0;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-delay: 1.5s;
+}
+#banner .title h1, #banner .title h4, #banner .title h3 {
+  text-align: center;
+  color: white;
+  margin: 0;
+  font-family: "League Spartan";
+  text-transform: uppercase;
+}
+#banner .title h1 {
+  font-size: 12vw;
+  padding: 1vh 0;
+}
+#banner .title h4 {
+  font-size: 3vw;
+}
+@media only screen and (max-width: 600px) {
+  #banner .title {
+    padding: 15vh 0;
+  }
   #banner .title .banner-img {
-    width: 30vw;
+    width: 40vw;
     height: auto;
-    margin: 2vh 0;
+    margin: 1vh 0;
     -webkit-animation-duration: 1s;
-    -webkit-animation-delay: 1.5s; }
-  #banner .title h1, #banner .title h4, #banner .title h3 {
-    text-align: center;
-    color: white;
-    margin: 0;
-    font-family: "League Spartan";
-    text-transform: uppercase; }
-  #banner .title h1 {
-    font-size: 12vw;
-    padding: 1vh 0; }
-  #banner .title h4 {
-    font-size: 3vw; }
-  @media only screen and (max-width: 600px) {
-    #banner .title {
-      padding: 15vh 0; }
-      #banner .title .banner-img {
-        width: 40vw;
-        height: auto;
-        margin: 1vh 0;
-        -webkit-animation-duration: 1s;
-        -webkit-animation-delay: 1.5s; } }
+    -webkit-animation-delay: 1.5s;
+  }
+}
 
 #portfolio {
   height: auto;
   padding: 10vh 0;
-  background-color: #fff; }
+  background-color: #fff;
+}
+#portfolio .portfolio {
+  -webkit-column-count: 2;
+  column-count: 2;
+}
+#portfolio .portfolio .img {
+  display: block;
+  margin: 0 auto;
+  width: 35vw;
+  height: auto;
+}
+#portfolio .portfolio .port-title {
+  font-family: "League Spartan";
+  text-transform: uppercase;
+  text-align: center;
+  color: #d10000;
+  margin: 0;
+  font-size: 2vw;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-delay: 1.5s;
+  -moz-animation-duration: 1s;
+  -moz-animation-delay: 1.5s;
+}
+#portfolio .portfolio .port-text {
+  font-family: "Glacial Indifference";
+  text-align: center;
+  color: #000;
+  margin: 2% 20%;
+  font-size: 20px;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-delay: 2s;
+  -moz-animation-duration: 1s;
+  -moz-animation-delay: 2s;
+}
+#portfolio .portfolio .port-btn {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "League Spartan";
+  width: 30%;
+  background-color: #000;
+  color: #fff;
+  padding: 2% 0;
+  -webkit-transition: background-color 0.5s ease, color 0.5s ease;
+  -moz-transition: background-color 0.5s ease, color 0.5s ease;
+  -ms-transition: background-color 0.5s ease, color 0.5s ease;
+  -o-transition: background-color 0.5s ease, color 0.5s ease;
+  transition: background-color 0.5s ease, color 0.5s ease;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-delay: 2s;
+  -moz-animation-duration: 1s;
+  -moz-animation-delay: 2s;
+}
+#portfolio .portfolio .port-btn:hover {
+  background-color: #d10000;
+  color: #fff;
+  -webkit-transition: background-color 0.5s ease, color 0.5s ease;
+  -moz-transition: background-color 0.5s ease, color 0.5s ease;
+  -ms-transition: background-color 0.5s ease, color 0.5s ease;
+  -o-transition: background-color 0.5s ease, color 0.5s ease;
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+@media only screen and (max-width: 600px) {
   #portfolio .portfolio {
-    -webkit-column-count: 2;
-    column-count: 2; }
-    #portfolio .portfolio .img {
-      display: block;
-      margin: 0 auto;
-      width: 35vw;
-      height: auto; }
-    #portfolio .portfolio .port-title {
-      font-family: "League Spartan";
-      text-transform: uppercase;
-      text-align: center;
-      color: #d10000;
-      margin: 0;
-      font-size: 2vw;
-      -webkit-animation-duration: 1s;
-      -webkit-animation-delay: 1.5s;
-      -moz-animation-duration: 1s;
-      -moz-animation-delay: 1.5s; }
-    #portfolio .portfolio .port-text {
-      font-family: "Glacial Indifference";
-      text-align: center;
-      color: #000;
-      margin: 2% 20%;
-      font-size: 20px;
-      -webkit-animation-duration: 1s;
-      -webkit-animation-delay: 2s;
-      -moz-animation-duration: 1s;
-      -moz-animation-delay: 2s; }
-    #portfolio .portfolio .port-btn {
-      display: block;
-      margin: 0 auto;
-      text-align: center;
-      text-decoration: none;
-      text-transform: uppercase;
-      font-family: "League Spartan";
-      width: 30%;
-      background-color: #000;
-      color: #fff;
-      padding: 2% 0;
-      -webkit-transition: background-color .5s ease, color .5s ease;
-      -moz-transition: background-color .5s ease, color .5s ease;
-      -ms-transition: background-color .5s ease, color .5s ease;
-      -o-transition: background-color .5s ease, color .5s ease;
-      transition: background-color .5s ease, color .5s ease;
-      -webkit-animation-duration: 1s;
-      -webkit-animation-delay: 2s;
-      -moz-animation-duration: 1s;
-      -moz-animation-delay: 2s; }
-      #portfolio .portfolio .port-btn:hover {
-        background-color: #d10000;
-        color: #fff;
-        -webkit-transition: background-color .5s ease, color .5s ease;
-        -moz-transition: background-color .5s ease, color .5s ease;
-        -ms-transition: background-color .5s ease, color .5s ease;
-        -o-transition: background-color .5s ease, color .5s ease;
-        transition: background-color .5s ease, color .5s ease; }
-    @media only screen and (max-width: 600px) {
-      #portfolio .portfolio {
-        column-count: 1; }
-        #portfolio .portfolio .img {
-          width: 80vw;
-          padding: 1vh 0; }
-        #portfolio .portfolio .port-title {
-          font-size: 20px;
-          margin: 0 10%; }
-        #portfolio .portfolio .port-text {
-          margin: 2% 10%;
-          font-size: 14px !important; }
-        #portfolio .portfolio .port-btn {
-          width: 70%; }
-        #portfolio .portfolio .projeto {
-          margin: 2vh 0; } }
+    column-count: 1;
+  }
+  #portfolio .portfolio .img {
+    width: 80vw;
+    padding: 1vh 0;
+  }
+  #portfolio .portfolio .port-title {
+    font-size: 20px;
+    margin: 0 10%;
+  }
+  #portfolio .portfolio .port-text {
+    margin: 2% 10%;
+    font-size: 14px !important;
+  }
+  #portfolio .portfolio .port-btn {
+    width: 70%;
+  }
+  #portfolio .portfolio .projeto {
+    margin: 2vh 0;
+  }
+}
 
 .materialbox-caption {
   overflow-x: hidden;
   background-color: #000;
   font-family: "Glacial Indifference";
-  text-transform: uppercase; }
+  text-transform: uppercase;
+}
 
 .gallery {
   background-color: #000;
   padding: 5vh 5vw;
   /* Clear floats after the columns */
   /* Responsive layout - makes a two column-layout instead of four columns */
-  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */ }
-  .gallery .gallery-title, .gallery .desc {
-    color: #fff;
-    text-align: center; }
-  .gallery .gallery-title {
-    font-family: "League Spartan";
-    -webkit-animation-duration: 1s;
-    -webkit-animation-delay: 1s;
-    -moz-animation-duration: 1s;
-    -moz-animation-delay: 1s; }
-  .gallery .desc {
-    font-family: "Glacial Indifference";
-    margin: -1vh 0 2vh;
-    -webkit-animation-duration: 1s;
-    -webkit-animation-delay: 2s;
-    -moz-animation-duration: 1s;
-    -moz-animation-delay: 2s; }
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+}
+.gallery .gallery-title, .gallery .desc {
+  color: #fff;
+  text-align: center;
+}
+.gallery .gallery-title {
+  font-family: "League Spartan";
+  -webkit-animation-duration: 1s;
+  -webkit-animation-delay: 1s;
+  -moz-animation-duration: 1s;
+  -moz-animation-delay: 1s;
+}
+.gallery .desc {
+  font-family: "Glacial Indifference";
+  margin: -1vh 0 2vh;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-delay: 2s;
+  -moz-animation-duration: 1s;
+  -moz-animation-delay: 2s;
+}
+.gallery .column {
+  float: left;
+  width: 25%;
+  padding: 10px;
+}
+.gallery .column img {
+  margin-top: 12px;
+  width: 100%;
+}
+.gallery .row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+@media only screen and (min-width: 1200px) {
   .gallery .column {
-    float: left;
     width: 25%;
-    padding: 10px; }
-    .gallery .column img {
-      margin-top: 12px;
-      width: 100%; }
-  .gallery .row:after {
-    content: "";
-    display: table;
-    clear: both; }
-  @media only screen and (min-width: 1200px) {
-    .gallery .column {
-      width: 25%; } }
-  @media only screen and (max-width: 600px) {
-    .gallery .column {
-      width: 50%; } }
-  @media only screen and (max-width: 357px) {
-    .gallery .column {
-      width: 50%; } }
+  }
+}
+@media only screen and (max-width: 600px) {
+  .gallery .column {
+    width: 50%;
+  }
+}
+@media only screen and (max-width: 357px) {
+  .gallery .column {
+    width: 50%;
+  }
+}
 
 #contato {
   height: auto;
   background-color: #fff;
-  padding: 25vh 0; }
-  @media only screen and (max-width: 600px) {
-    #contato {
-      padding: 10vh 5vw; } }
-  #contato .arrow {
-    padding: 5vh 0;
-    width: 100vw;
-    text-align: center; }
-    #contato .arrow .arrow-up {
-      margin: 0 auto;
-      color: #000;
-      border: 1px solid #000;
-      padding: 10px;
-      border-radius: 6px;
-      transition: 0.3s background-color; }
-      #contato .arrow .arrow-up:hover {
-        background-color: #000;
-        color: #fff; }
-  #contato .desc {
-    font-family: "League Spartan";
+  padding: 25vh 0;
+}
+@media only screen and (max-width: 600px) {
+  #contato {
+    padding: 10vh 5vw;
+  }
+}
+#contato .arrow {
+  padding: 5vh 0;
+  width: 100vw;
+  text-align: center;
+}
+#contato .arrow .arrow-up {
+  margin: 0 auto;
+  color: #000;
+  border: 1px solid #000;
+  padding: 10px;
+  border-radius: 6px;
+  transition: 0.3s background-color;
+}
+#contato .arrow .arrow-up:hover {
+  background-color: #000;
+  color: #fff;
+}
+#contato .desc {
+  font-family: "League Spartan";
+  text-align: center;
+  color: #000;
+  text-transform: uppercase;
+  margin: 0 2vw;
+}
+#contato .desc .contato-desc {
+  margin: 0;
+  font-size: 50px;
+}
+@media only screen and (max-width: 600px) {
+  #contato .desc .contato-desc {
+    font-size: 25px;
+  }
+}
+#contato .desc .contato-sub {
+  font-family: "Glacial Indifference";
+  font-weight: lighter;
+  margin: 1vh 0;
+  font-size: 20px;
+  margin-bottom: 10vh;
+}
+@media only screen and (max-width: 600px) {
+  #contato .desc .contato-sub {
+    font-size: 14px;
+    margin-bottom: 5vh;
+  }
+}
+#contato .desc .contato-form {
+  margin: 0 auto;
+  width: 50%;
+}
+#contato .desc .contato-form .contato-email {
+  width: 65%;
+  font-family: "Glacial Indifference";
+  text-transform: uppercase;
+}
+#contato .desc .contato-form .contato-email::placeholder {
+  font-family: "Glacial Indifference";
+  text-transform: uppercase;
+}
+@media only screen and (max-width: 600px) {
+  #contato .desc .contato-form .contato-email::placeholder {
     text-align: center;
-    color: #000;
-    text-transform: uppercase;
-    margin: 0 2vw; }
-    #contato .desc .contato-desc {
-      margin: 0;
-      font-size: 50px; }
-      @media only screen and (max-width: 600px) {
-        #contato .desc .contato-desc {
-          font-size: 25px; } }
-    #contato .desc .contato-sub {
-      font-family: "Glacial Indifference";
-      font-weight: lighter;
-      margin: 1vh 0;
-      font-size: 20px;
-      margin-bottom: 10vh; }
-      @media only screen and (max-width: 600px) {
-        #contato .desc .contato-sub {
-          font-size: 14px;
-          margin-bottom: 5vh; } }
-    #contato .desc .contato-form {
-      margin: 0 auto;
-      width: 50%; }
-      #contato .desc .contato-form .contato-email {
-        width: 65%;
-        font-family: "Glacial Indifference";
-        text-transform: uppercase; }
-        #contato .desc .contato-form .contato-email::placeholder {
-          font-family: "Glacial Indifference";
-          text-transform: uppercase; }
-          @media only screen and (max-width: 600px) {
-            #contato .desc .contato-form .contato-email::placeholder {
-              text-align: center; } }
-        #contato .desc .contato-form .contato-email:focus, #contato .desc .contato-form .contato-email:active {
-          border-color: #000; }
-      #contato .desc .contato-form .contato-submit {
-        width: 30%;
-        float: right;
-        padding: 1vh;
-        border: none;
-        font-family: "League Spartan";
-        text-transform: uppercase;
-        transition: 0.3s background-color; }
-        #contato .desc .contato-form .contato-submit:hover {
-          background-color: #000;
-          color: #fff; }
-      @media only screen and (max-width: 600px) {
-        #contato .desc .contato-form {
-          width: 100%;
-          margin: 0 1%; }
-          #contato .desc .contato-form .contato-email {
-            width: 80%; }
-          #contato .desc .contato-form .contato-submit {
-            float: none;
-            margin: 2% 0; } }
-  #contato .social {
-    font-family: "League Spartan";
-    display: block;
-    margin: 0 auto;
-    text-align: center;
-    color: #000;
-    text-transform: uppercase; }
-    @media only screen and (max-width: 600px) {
-      #contato .social .social-title {
-        font-size: 25px; } }
-    #contato .social .social-sub {
-      font-family: "Glacial Indifference";
-      font-size: 14px;
-      margin-top: -2vh;
-      margin-bottom: 5vh; }
-    #contato .social a {
-      text-decoration: none;
-      color: #000;
-      margin: 0 1vw;
-      border: 1px solid #000;
-      padding: 10px;
-      border-radius: 6px;
-      transition: 0.3s background-color; }
-      #contato .social a:hover {
-        background-color: #000;
-        color: #fff; }
+  }
+}
+#contato .desc .contato-form .contato-email:focus, #contato .desc .contato-form .contato-email:active {
+  border-color: #000;
+}
+#contato .desc .contato-form .contato-submit {
+  width: 30%;
+  float: right;
+  padding: 1vh;
+  border: none;
+  font-family: "League Spartan";
+  text-transform: uppercase;
+  transition: 0.3s background-color;
+}
+#contato .desc .contato-form .contato-submit:hover {
+  background-color: #000;
+  color: #fff;
+}
+@media only screen and (max-width: 600px) {
+  #contato .desc .contato-form {
+    width: 100%;
+    margin: 0 1%;
+  }
+  #contato .desc .contato-form .contato-email {
+    width: 80%;
+  }
+  #contato .desc .contato-form .contato-submit {
+    float: none;
+    margin: 2% 0;
+  }
+}
+#contato .social {
+  font-family: "League Spartan";
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  color: #000;
+  text-transform: uppercase;
+}
+@media only screen and (max-width: 600px) {
+  #contato .social .social-title {
+    font-size: 25px;
+  }
+}
+#contato .social .social-sub {
+  font-family: "Glacial Indifference";
+  font-size: 14px;
+  margin-top: -2vh;
+  margin-bottom: 5vh;
+}
+#contato .social a {
+  text-decoration: none;
+  color: #000;
+  margin: 0 1vw;
+  border: 1px solid #000;
+  padding: 10px;
+  border-radius: 6px;
+  transition: 0.3s background-color;
+}
+#contato .social a:hover {
+  background-color: #000;
+  color: #fff;
+}
 
 .footer {
   left: 0;
@@ -426,44 +519,59 @@ body {
   background-color: #000;
   color: #fff;
   font-family: "Glacial Indifference";
-  padding: 1px 0; }
-  .footer p {
-    text-align: center; }
+  padding: 1px 0;
+}
+.footer p {
+  text-align: center;
+}
 
 #bio {
   height: auto;
-  width: 100vw; }
+  width: 100vw;
+}
+#bio .perfil {
+  width: 50vw;
+  height: auto;
+  display: block;
+  padding: 10vh;
+}
+@media only screen and (max-width: 600px) {
   #bio .perfil {
+    margin: 0 auto;
     width: 50vw;
     height: auto;
-    display: block;
-    padding: 10vh; }
-    @media only screen and (max-width: 600px) {
-      #bio .perfil {
-        margin: 0 auto;
-        width: 50vw;
-        height: auto;
-        padding: 3vh 0; } }
-  #bio .bio {
-    font-family: "League Spartan";
-    text-align: center;
-    padding: 0 5vw; }
-    @media only screen and (max-width: 600px) {
-      #bio .bio h1 {
-        font-size: 40px; } }
-    #bio .bio .text {
-      font-family: "Glacial Indifference"; }
+    padding: 3vh 0;
+  }
+}
+#bio .bio {
+  font-family: "League Spartan";
+  text-align: center;
+  padding: 0 5vw;
+}
+@media only screen and (max-width: 600px) {
+  #bio .bio h1 {
+    font-size: 40px;
+  }
+}
+#bio .bio .text {
+  font-family: "Glacial Indifference";
+  font-size: 16px;
+}
 
 #habilidades {
   background-color: #000;
-  padding: 5vh 7vw; }
+  padding: 5vh 7vw;
+}
+#habilidades h1 {
+  text-align: center;
+  color: #fff;
+  font-family: "League Spartan";
+  padding: 2vh 0;
+}
+@media only screen and (max-width: 600px) {
   #habilidades h1 {
-    text-align: center;
-    color: #fff;
-    font-family: "League Spartan";
-    padding: 2vh 0; }
-    @media only screen and (max-width: 600px) {
-      #habilidades h1 {
-        font-size: 40px; } }
+    font-size: 40px;
+  }
+}
 
 /*# sourceMappingURL=main.css.map */
